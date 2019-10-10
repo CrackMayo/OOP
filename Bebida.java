@@ -11,10 +11,12 @@
 public class Bebida {
     private String nombre;
     private boolean contenido;
+    private int litros;
     
     public Bebida(String nombre){
         this.nombre = nombre;
         this.contenido = true;
+        this.litros = 1;
     }
     
     public boolean Consumir(){
@@ -37,5 +39,9 @@ public class Bebida {
      */
     public boolean isContenido() {
         return contenido;
+    }
+
+    public int getLitros(){
+        return litros;
     }
 }
